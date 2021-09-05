@@ -11,7 +11,7 @@ const AddToDoList =(props)=>{
     const AddToDoHandler = (event)=>{
         event.preventDefault();
 
-        console.log(enteredTodoList)
+        props.onAddList(enteredTodoList)
         setEnteredTodoList("")
     }
     

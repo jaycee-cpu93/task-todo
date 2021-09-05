@@ -10,7 +10,7 @@ const ListToDo = (props) =>{
                 {props.todos.map((todo) => (
                     <li>
                         {todo.task}
-                        </li>
+                    </li>
                 ))}
             </ul>
             </CardBody>
