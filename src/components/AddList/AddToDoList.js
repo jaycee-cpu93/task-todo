@@ -10,10 +10,14 @@ const AddToDoList =(props)=>{
     
     const AddToDoHandler = (event)=>{
         event.preventDefault();
+        if(enteredTodoList.trim().length===0){
+            return;
+        }
 
         props.onAddList(enteredTodoList)
         setEnteredTodoList("")
     }
+    
     
     const TextContentHandler = (event) => {
         setEnteredTodoList(event.target.value)
